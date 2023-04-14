@@ -205,6 +205,15 @@ class Segment_For_Wp_By_In8_Io_Admin
                         'wrap_class' => 'no-border-bottom',
                     ),
                     array(
+                        'id' => 'segment_host',
+                        'type' => 'text',
+                        'title' => 'Regional host',
+                        'description' => '<a href="https://segment.com/docs/connections/sources/catalog/libraries/server/php/#regional-configuration" target="_blank">Docs.</a> Send data to the desired region',
+                        'default' => 'https://api.segment.io/',
+                        'dependency' => array('php_api_key', '!=', ''),
+                        'wrap_class' => 'no-border-bottom',
+                    ),
+                    array(
                         'id' => 'segment_php_consumer',
                         'type' => 'radio',
                         'title' => 'PHP Consumer',
